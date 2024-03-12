@@ -49,10 +49,10 @@ function SeasonStatsTable({
             <TableRow key={stat.season}>
               <TableCell>{`${String(stat.season).slice(0, 4)}-${String(stat.season).slice(4)}`}</TableCell>
               <TableCell>
-                {stat.gameTypes.includes(2) ? <FaCheck /> : ""}
+                {stat.gameTypes.includes(2) ? <FaCheck /> : "-"}
               </TableCell>
               <TableCell>
-                {stat.gameTypes.includes(3) ? <FaCheck /> : ""}
+                {stat.gameTypes.includes(3) ? <FaCheck /> : "-"}
               </TableCell>
               <TableCell>
                 {summary && stat.season in summary ? (
